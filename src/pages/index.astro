@@ -1,0 +1,35 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h2>🤓 Alexander Roberto dos Santos.</h2>
+      <p>
+        Olá, seja muito bem vindo ao meu humilde portfólio. Construído usando
+        <a href="https://astro.build/" target="_blank">
+          <b>AstroJS</b>.
+        </a>
+      </p>
+      <p>Sou desenvolvedor FullStack com forte apego ao BackEnd.</p>
+      <p>
+        Aqui estarão listados alguns dos meus projetos profissionais / pessoais
+        para demostração da minha habilidade como desenvolvedor.
+      </p>
+      <p>
+        Sinta-se a vontade para conferir mais sobre mim e meus projetos nas
+        minhas redes sociais.
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>
